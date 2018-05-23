@@ -142,7 +142,7 @@ module.exports = {
     },
     splitChunks: {
       cacheGroups: {
-        default: {
+        app: {
           chunks: 'initial',
           name: 'app',
           priority: -20,
@@ -154,10 +154,7 @@ module.exports = {
           priority: -10,
           test: function (module) {
             // ensure other packages in mono repo don't get put into vendor bundle
-            return module.resource &&
-              module.resource.indexOf('blockchain-wallet-v4-frontend/src') === -1 &&
-              module.resource.indexOf('node_modules/blockchain-info-components/src') === -1 &&
-              module.resource.indexOf('node_modules/blockchain-wallet-v4/src') === -1
+            return module.resource && module.resource.indexOf('node_modules') !== -1
           }
         }
       }

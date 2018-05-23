@@ -14,10 +14,6 @@ export {
   autofill,
   blur,
   change,
-  clearAsyncError,
-  clearFields,
-  clearSubmit,
-  clearSubmitErrors,
   destroy,
   focus,
   initialize,
@@ -32,9 +28,7 @@ export {
   submit,
   touch,
   unregisterField,
-  untouch,
-  updateSyncErrors,
-  updateSyncWarnings
+  untouch
 } from 'redux-form'
 
 export const change2 = (form, field, value) => ({ type: AT.CHANGE2, payload: { form, field, value } })
