@@ -77,7 +77,7 @@ class QRCodeCaptureContainer extends React.PureComponent {
   }
 
   handleScanBtcPriv (data) {
-    if (utils.bch.isValidBitcoinPrivateKey(data)) {
+    if (utils.bitcoin.isValidBitcoinPrivateKey(data)) {
       this.props.formActions.change('sendBtc', 'priv', data)
       this.props.updateUI({ btcPriv: { toggled: false } })
     } else {
