@@ -11,28 +11,6 @@
         "countries": "*",
         "states": "*",
         "announcements": {
-          "public": {
-            "id": "domain-move",
-            "type": "info",
-            "hideType": "dismiss",
-            "header": {
-              "en": "We’re packing our bags and preparing to move...domains!"
-            },
-            "sections": [{
-              "title": {
-                "en": ""
-              },
-              "body": {
-                "en": "To make way for our new and exciting products coming this year, we’re saying hello to our new home. blockchain.info will soon be changing URLs as it's combined with our company site, blockchain.com."
-              }
-            }],
-            "action": {
-              "title": {
-                "en": "Read more about what to expect."
-              },
-              "link": "https://blog.blockchain.com/2018/06/19/blockchain-infos-moving-domains/"
-            }
-          },
           "wallet": {
             "id": "privacy-policy-update",
             "type": "info",
