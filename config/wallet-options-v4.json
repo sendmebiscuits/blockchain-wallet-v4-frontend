@@ -3,7 +3,6 @@
     "web": {
       "application": {
         "enableDomainMigrationRedirects": true,
-        "fraction": 1,
         "countries": "*",
         "states": "*",
         "announcements": {
@@ -34,7 +33,6 @@
         }
       },
       "bitcoin": {
-        "fraction": 1,
         "countries": "*",
         "states": "*",
         "config": {
@@ -43,14 +41,12 @@
         "announcements": {}
       },
       "buysell": {
-        "fraction": 1,
         "countries": ["GB", "NL", "DE", "US"],
         "states": "*",
         "config": {},
         "announcements": {}
       },
       "coinify": {
-        "fraction": 1,
         "countries": ["GB", "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "GF", "DE", "GI", "GR", "GP", "GG", "HU", "IS", "IE", "IM", "IT", "JE", "LV", "LI", "LT", "LU", "MT", "MQ", "YT", "MC", "NL", "NO", "PL", "PT", "RE", "BL", "MF", "PM", "SM", "SK", "SI", "ES", "SE", "CH"],
         "states": "*",
         "config": {
@@ -62,7 +58,6 @@
         "announcements": {}
       },
       "ethereum": {
-        "fraction": 1,
         "countries": "*",
         "states": "*",
         "lastTxFuse": 86400,
@@ -72,7 +67,6 @@
         "announcements": {}
       },
       "sfox": {
-        "fraction": 1,
         "countries": ["US"],
         "states": ["AR", "AZ", "CA", "CO", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "MI", "MN", "MO", "MT", "NE", "NV", "OK", "PA", "SC", "SD", "TN", "TX", "VA", "WI", "WV"],
         "config": {
@@ -80,20 +74,11 @@
           "apiKey": "6CD61A0E965D48A7B1883A860490DC9E",
           "plaid": "0b041cd9e9fbf1e7d93a0d5a39f5b9",
           "plaidEnv": "tartan",
-          "siftScience": "3884e5fae5",
-          "service_charge": {
-            "US": {
-              "min_tx_amount": 0,
-              "max_service_charge": 100000,
-              "percent": 0.02,
-              "send_to_miner": true
-            }
-          }
+          "siftScience": "3884e5fae5"
         },
         "announcements": {}
       },
       "shapeshift": {
-        "fraction": 1,
         "countries": "*",
         "states": ["AR", "AZ", "CA", "CO", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "MI", "MN", "MO", "MT", "NE", "NV", "OK", "PA", "SC", "SD", "TN", "TX", "VA", "WI", "WV"],
         "config": {
