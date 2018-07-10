@@ -3,10 +3,6 @@
     "web": {
       "application": {
         "enableDomainMigrationRedirects": true,
-        "availability": {
-          "adverts": true,
-          "mobile_login": true
-        },
         "fraction": 1,
         "countries": "*",
         "states": "*",
@@ -38,13 +34,6 @@
         }
       },
       "bitcoin": {
-        "availability": {
-          "send": true,
-          "request": true,
-          "history": true,
-          "report": true,
-          "fiat": true
-        },
         "fraction": 1,
         "countries": "*",
         "states": "*",
@@ -54,11 +43,6 @@
         "announcements": {}
       },
       "buysell": {
-        "availability": {
-          "buy": true,
-          "sell": true,
-          "history": true
-        },
         "fraction": 1,
         "countries": ["GB", "NL", "DE", "US"],
         "states": "*",
@@ -78,12 +62,6 @@
         "announcements": {}
       },
       "ethereum": {
-        "availability": {
-          "send": true,
-          "request": true,
-          "history": true,
-          "fiat": true
-        },
         "fraction": 1,
         "countries": "*",
         "states": "*",
@@ -99,7 +77,6 @@
         "states": ["AR", "AZ", "CA", "CO", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "MI", "MN", "MO", "MT", "NE", "NV", "OK", "PA", "SC", "SD", "TN", "TX", "VA", "WI", "WV"],
         "config": {
           "production": false,
-          "availability": true,
           "apiKey": "6CD61A0E965D48A7B1883A860490DC9E",
           "plaid": "0b041cd9e9fbf1e7d93a0d5a39f5b9",
           "plaidEnv": "tartan",
@@ -116,11 +93,6 @@
         "announcements": {}
       },
       "shapeshift": {
-        "availability": {
-          "buy": true,
-          "sell": true,
-          "history": true
-        },
         "fraction": 1,
         "countries": "*",
         "states": ["AR", "AZ", "CA", "CO", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "MI", "MN", "MO", "MT", "NE", "NV", "OK", "PA", "SC", "SD", "TN", "TX", "VA", "WI", "WV"],
