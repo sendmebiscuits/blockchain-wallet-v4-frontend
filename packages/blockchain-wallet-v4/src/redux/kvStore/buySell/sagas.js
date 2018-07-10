@@ -28,9 +28,6 @@ export default ({ api }) => {
       },
       coinify: {
         trades: []
-      },
-      unocoin: {
-        trades: []
       }
     }
     const newkv = set(KVStoreEntry.value, newBuysellEntry, kv)

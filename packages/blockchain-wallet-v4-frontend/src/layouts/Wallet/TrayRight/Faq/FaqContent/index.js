@@ -322,7 +322,7 @@ const FaqContent = [
         <FormattedMessage id='scenes.faq.group.walletsecurity.answer4.four' defaultMessage='After replacing this associated information, and archiving all imported addresses within the “Addresses” section, all information pertaining to you has been removed. If you are the only one that knows your backup phrase, your wallet is essentially mute until you decide to use it again. We suggest keeping the wallet’s Backup Phrase in a safe place, in case you ever want to return to your wallet.' />
         <br />
         <br />
-        <FormattedMessage id='scenes.faq.group.walletsecurity.answer4.five' defaultMessage='If you’ve created an account with one of our exchange partners (Coinify, SFOX, Unocoin or Shapeshift), please reach out to their support teams for further assistance with removing your personal information from their records. For assistance with this, please reach out to our support team' />
+        <FormattedMessage id='scenes.faq.group.walletsecurity.answer4.five' defaultMessage='If you’ve created an account with one of our exchange partners (Coinify, SFOX or Shapeshift), please reach out to their support teams for further assistance with removing your personal information from their records. For assistance with this, please reach out to our support team' />
         <span>&nbsp;</span>
         <Link href='https://support.blockchain.com/hc/en-us/requests/new' target='_blank' size='13px' weight={200}>
           <FormattedMessage id='scenes.faq.group.walletsecurity.answer4.link' defaultMessage='here' />
