@@ -18,28 +18,6 @@ const isIpList = value => ipListRegex.test(value)
 
 const isAlphaNumeric = value => emailCodeRegex.test(value)
 
-const isBitcoinFiatAvailable = (country, currency, rates) => {
-  if (isNil(country)) return false
-  if (isNil(currency)) return false
-  // if (isNil(bitcoinOptions)) return false
-  // if (!bitcoinOptions.availability.fiat) return false
-  // if (!equals(bitcoinOptions.countries, '*') && !contains(bitcoinOptions.countries, country)) return false
-  // if (!equals(bitcoinOptions.states, '*') && equals(country, 'US') && !contains(bitcoinOptions.states, state)) return false
-  if (isEmpty(rates)) return false
-  return true
-}
-
-const isEthereumFiatAvailable = (country, currency, rates, ethereumOptions) => {
-  if (isNil(country)) return false
-  if (isNil(currency)) return false
-  if (isNil(ethereumOptions)) return false
-  if (!ethereumOptions.availability.fiat) return false
-  if (!equals(ethereumOptions.countries, '*') && !contains(ethereumOptions.countries, country)) return false
-  // if (!equals(bitcoinOptions.states, '*') && equals(country, 'US') && !contains(bitcoinOptions.states, state)) return false
-  if (isEmpty(rates)) return false
-  return true
-}
-
 const formatSSN = (val, prevVal) => {
   const nums = val.replace(/[^\d]/g, '')
   if (!prevVal || val.length > prevVal.length) {
@@ -122,9 +100,7 @@ export {
   isGuid,
   isIpList,
   isAlphaNumeric,
-  isBitcoinFiatAvailable,
   isDOB,
-  isEthereumFiatAvailable,
   isSSN,
   isUsZipcode,
   formatSSN,
