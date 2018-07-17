@@ -1,6 +1,6 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
-import { equals, length, prop, path, pathOr } from 'ramda'
+import { gte, length, prop, path, pathOr } from 'ramda'
 import { selectors } from 'data'
 import { createDeepEqualSelector } from 'services/ReselectHelper'
 
@@ -27,8 +27,10 @@ export const getData = createDeepEqualSelector(
     const feePerByte = prop('feePerByte', formValues)
     const destination = prop('to', formValues)
     const from = prop('from', formValues)
+    console.log(feePerByte)
 
     const transform = payment => {
+      console.log(payment)
       const regularFeePerByte = path(['fees', 'regular'], payment)
       const priorityFeePerByte = path(['fees', 'priority'], payment)
       const minFeePerByte = path(['fees', 'limits', 'min'], payment)
@@ -62,7 +64,7 @@ export const getData = createDeepEqualSelector(
       ]
       const watchOnly = prop('watchOnly', from)
       const addressMatchesPriv = payment.fromType === 'FROM.WATCH_ONLY'
-      const isPriorityFeePerByte = equals(
+      const isPriorityFeePerByte = gte(
         parseInt(feePerByte),
         priorityFeePerByte
       )

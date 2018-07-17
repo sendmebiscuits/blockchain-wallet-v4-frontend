@@ -360,7 +360,7 @@ const FirstStep = props => {
           type='submit'
           nature='primary'
           uppercase
-          disabled={submitting || invalid || pristine}
+          disabled={submitting || invalid}
         >
           <FormattedMessage
             id='modals.sendbtc.firststep.continue'
