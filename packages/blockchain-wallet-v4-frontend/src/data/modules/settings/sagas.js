@@ -150,6 +150,7 @@ export default ({ coreSagas }) => {
       yield call(coreSagas.settings.setIpLock, action.payload)
       yield put(actions.alerts.displaySuccess(C.IPWHITELIST_UPDATE_SUCCESS))
     } catch (e) {
+      console.log(e)
       yield put(actions.logs.logErrorMessage(logLocation, 'updateIpLock', e))
       yield put(actions.alerts.displayError(C.IPWHITELIST_UPDATE_ERROR))
     }

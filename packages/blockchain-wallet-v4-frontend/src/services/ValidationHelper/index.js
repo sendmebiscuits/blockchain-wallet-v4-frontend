@@ -20,7 +20,7 @@ const isEmail = value => emailRegex.test(value)
 
 const isGuid = value => guidRegex.test(value)
 
-const isIpList = value => ipListRegex.test(value)
+const isIpList = value => !value || ipListRegex.test(value)
 
 const isAlphaNumeric = value => emailCodeRegex.test(value)
 
